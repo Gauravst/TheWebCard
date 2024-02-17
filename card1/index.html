@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="cardMain">
+      <div class="cardBox1">
+        <h1>HTML</h1>
+        <p>
+          HyperText Markup Language or HTML is the standard markup language for
+          documents designed to be displayed in a web browser. It defines the
+          content and structure of web content.
+        </p>
+      </div>
+      <div class="cardBox2">
+        <a href="#">Read More</a>
+      </div>
+    </div>
+    <style>
+      body {
+        background-color: #f0f0f0;
+        font-family: "Poppins", sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      .cardMain {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #051320;
+        color: #ffffff;
+        border-radius: 15px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        width: 260px;
+        height: 330px;
+        transition: transform 0.3s ease;
+      }
+
+      .cardMain:hover {
+        transform: translateY(-5px);
+      }
+
+      .cardBox1 {
+        padding: 20px;
+        text-align: center;
+        flex: 1;
+      }
+
+      .cardBox2 {
+        background-color: rgba(255, 255, 255, 0.7);
+        border-top: 1px solid #ffffff;
+        width: 100%;
+        padding: 15px;
+        text-align: center;
+      }
+
+      .cardBox2 a {
+        text-decoration: none;
+        color: #051320;
+        font-weight: 600;
+        padding: 8px 20px;
+        border-radius: 20px;
+        background-color: #ffffff;
+        transition: background-color 0.3s ease;
+      }
+
+      .cardBox2 a:hover {
+        background-color: #f0f0f0;
+      }
+
+      .cardMain h1 {
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+
+      .cardMain p {
+        font-size: 14px;
+        line-height: 1.6;
+      }
+    </style>
+  </body>
+</html>
