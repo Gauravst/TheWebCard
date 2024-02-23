@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    />
+    <title>Card</title>
+  </head>
+  <body>
+      <div class="cardMain">
+        <div class="cardHeader">
+          <img
+            src="img/img1.png"
+          />
+        </div>
+        <div class="cardBody">
+					<div class="tags">
+						<span class="tag">HTML</span>
+						<span class="tag">CSS</span>
+						<span class="tag">JS</span>
+					</div>
+
+          <h4 class="title">Github clone</h4>
+          <p>Creating a GitHub clone with HTML, CSS, and JavaScript involves planning, structuring, and implementing front-end interfaces, dynamic behavior, and back-end functionalities for version control and collaboration.</p>
+          <div class="user">
+            <div class="userInfo">
+              <h5>Gaurav Singh</h5>
+              <small>Web Devloveper</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <style>
+      body {
+        background-color: #e9e9e9;
+        font-family: "Poppins", sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+
+      .cardMain {
+        margin: 10px;
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        width: 330px;
+      }
+
+      .cardHeader img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+
+      .cardBody {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 10px;
+      }
+
+			.tags{
+				display: flex;
+			}
+
+      .tag {
+				background-color: #5e76bf;
+        border-radius: 50px;
+        font-size: 12px;
+        margin: 0 3px;
+        color: #fff;
+        padding: 2px 10px;
+        text-transform: uppercase;
+        cursor: pointer;
+      }
+
+			.cardBody .title{
+				font-size: 22px;
+				margin: 15px 0px 0px 0px;
+			}
+
+      .cardBody p {
+        font-size: 13px;
+				margin: 10px 0px;
+      }
+
+      .user {
+        display: flex;
+      }
+
+      .userInfo h5 {
+        margin: 0;
+      }
+
+      .userInfo small {
+				margin: 0px;
+        color: #545d7a;
+      }
+    </style>
+  </body>
+</html>
