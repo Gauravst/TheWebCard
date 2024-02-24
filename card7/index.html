@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    />
+    <title>card</title>
+  </head>
+  <body>
+    <div class="mainCard">
+      <div class="card">
+        <div class="btn">visit >></div>
+        <img class="cardImg" src="./img/img1.png" />
+        <p class="cardText">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores
+          saepe sit tenetur in assumenda consectetur ea possimus laudantium
+          necessitatibus nobis!
+        </p>
+      </div>
+    </div>
+    <style>
+      body {
+        /* background-color: #f0f0f0; */
+        background-color: #ffffff;
+        font-family: "Poppins";
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      .mainCard {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #ffffff;
+        border-radius: 15px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        padding: 5px;
+        width: 260px;
+        height: 330px;
+        box-sizing: border-box;
+        border: 1px solid rgb(224, 223, 223);
+        cursor: pointer;
+      }
+
+      .mainCard .card {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-sizing: border-box;
+        position: relative;
+        transition: height 0.3s ease;
+      }
+
+      .btn {
+        position: absolute;
+        z-index: 10;
+        height: 100%;
+        width: 100%;
+        backdrop-filter: blur(2px);
+        background-color: rgba(255, 255, 255, 0);
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: black;
+        font-size: 18px;
+        font-weight: 500;
+        text-decoration: underline;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
+
+      .card:hover .btn {
+        opacity: 1;
+      }
+
+      .card:hover .cardText {
+        display: none;
+      }
+
+      .card:hover .cardImg {
+        border-radius: 15px;
+      }
+
+      .card img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        box-sizing: border-box;
+        border-radius: 15px 15px 0px 0px;
+      }
+
+      .card p {
+        text-align: center;
+        background-color: rgb(252, 206, 206);
+        height: 100%;
+        margin: 0;
+        padding: 5px 10px;
+        border-radius: 0px 0px 15px 15px;
+        font-size: 16px;
+        font-weight: 500;
+      }
+    </style>
+  </body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<!-- how to make Responsive card using html css -->
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    />
+    <title>Card</title>
+  </head>
+
+  <body>
+    <div class="mainCard">
+      <div class="imgBox">
+        <img
+          src="./img/img1.png"
+        />
+      </div>
+      <div class="info">
+        <h2>Card 10</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto,
+          hic? Magnam eum error saepe doloribus corrupti repellat quisquam alias
+          doloremque!
+        </p>
+        <a href="#">Read More</a>
+      </div>
+    </div>
+    <style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+      body {
+        /* background-color: #f0f0f0; */
+        background: #ffffff;
+        font-family: "Poppins";
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        box-sizing: border-box;
+        flex-wrap: wrap;
+      }
+
+      .mainCard {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        width: 350px;
+        max-width: 100%;
+        height: 300px;
+        background: #ffeaf7;
+        border-radius: 15px;
+        transition: 0.5s;
+        box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+        border: 1px solid rgba(128, 128, 128, 0.404);
+      }
+
+      .mainCard:hover {
+        height: 400px;
+      }
+
+      .mainCard .imgBox {
+        position: absolute;
+        top: 20px;
+        width: 300px;
+        height: 220px;
+        background: #333333;
+        border-radius: 12px;
+        overflow: hidden;
+        transition: 0.5s;
+      }
+
+      .mainCard:hover .imgBox {
+        top: -100px;
+        scale: 0.75;
+        box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+      }
+
+      .mainCard .imgBox img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .mainCard .info {
+        position: absolute;
+        top: 252px;
+        width: 100%;
+        height: 35px;
+        padding: 0 30px;
+        text-align: center;
+        overflow: hidden;
+        transition: 0.5s;
+      }
+
+      .mainCard:hover .info {
+        top: 130px;
+        height: 250px;
+      }
+
+      .mainCard .info h2 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #333333;
+      }
+
+      .mainCard .info p {
+        color: #333333;
+				padding: 0px 20px;
+      }
+
+      .mainCard .info a {
+        position: relative;
+        top: 15px;
+        display: inline-block;
+        padding: 12px 25px;
+        text-decoration: none;
+        background: #181818;
+        color: #ffffff;
+        font-weight: 500;
+				border-radius: 10px;
+      }
+
+      .mainCard .info a:hover {
+        opacity: 0.8;
+      }
+
+      @media (max-width: 480px) {
+        .mainCard {
+          width: 230px;
+          border-radius: 15px;
+        }
+
+        .mainCard .imgBox {
+          width: 185px;
+          border-radius: 10px;
+        }
+
+        .mainCard .info p {
+          font-size: 0.8rem;
+        }
+
+        .mainCard .info a {
+          font-size: 0.9rem;
+        }
+      }
+    </style>
+  </body>
+</html>
